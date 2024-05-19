@@ -7,14 +7,19 @@ module.exports = {
     'airbnb-typescript',
     'plugin:@typescript-eslint/recommended',
     'plugin:react-hooks/recommended',
-    'plugin:prettier/recommended'
+    'plugin:prettier/recommended',
   ],
-  ignorePatterns: ['dist', '.eslintrc.cjs', 'vite.config.ts', 'tailwind.config.js'],
+  ignorePatterns: [
+    'dist',
+    '.eslintrc.cjs',
+    'vite.config.ts',
+    'tailwind.config.js',
+  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
-    project: './tsconfig.json'
+    project: './tsconfig.json',
   },
   plugins: ['react', 'react-refresh', '@typescript-eslint', 'prettier'],
   rules: {
@@ -24,8 +29,12 @@ module.exports = {
     ],
     'react/react-in-jsx-scope': 0,
     'react/jsx-no-useless-fragment': 0,
+    'react/prop-types': 0,
+    'react/jsx-props-no-spreading': 0,
     'no-console': 'error',
     'prettier/prettier': 'error',
-    'semi': 0
+    semi: 0,
+    'import/extensions': 0,
+    'import/prefer-default-export': 0
   },
 }
