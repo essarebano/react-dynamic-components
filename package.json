@@ -4,8 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "author": {
-    "name": "Essa Rebano",
-    "email": "essarebano.dev@gmail.com"
+    "name": "Essa Rebano"
   },
   "scripts": {
     "dev": "vite",
